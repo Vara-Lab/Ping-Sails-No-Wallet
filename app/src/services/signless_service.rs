@@ -7,12 +7,6 @@ use sails_rs::{
     prelude::*
 };
 
-// use crate::state_types::signless_accounts_state_type::{
-//     ContractSignlessAccounts,
-//     SignlessAccount,
-//     SignlessError
-// };
-
 use crate::states::signless_accounts_state::{
     ContractSignlessAccounts,
     SignlessAccount,

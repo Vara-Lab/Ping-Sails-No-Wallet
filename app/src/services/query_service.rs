@@ -74,18 +74,6 @@ impl<'a> QueryService<'a> {
 
         QueryEvent::SignlessAccountData(response)
     }
-
-    // Remote call "traffic_light" exposed to external consumers
-    // Returns a struct that will be sent as a response to the user
-    // Is treated as a query, keeping everything unchanged and returning some data. (&self)
-    /*
-    pub fn traffic_light(&self) -> IoTrafficLightState {
-        self
-            .traffic_light_state
-            .to_owned()
-            .into()
-    }
-    */
 }
 
 

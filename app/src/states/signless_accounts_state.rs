@@ -118,27 +118,3 @@ pub struct SignlessAccount {
     address: String,
     encoded: String,
 }
-
-
-
-
-
-    // pub fn get_user_address(&self, caller: ActorId, user_address: Option<ActorId>) -> Result<ActorId, SignlessError> {
-    //     let address = match user_address {
-    //         Some(address) => {
-    //             let signless_account_address = self
-    //                 .signless_accounts_address_by_user_address
-    //                 .get(&address)
-    //                 .ok_or(SignlessError::SignlessAccountHasInvalidSession)?;
-
-    //             if *signless_account_address != caller {
-    //                 return Err(SignlessError::SignlessAccountNotApproved);
-    //             }
-
-    //             address
-    //         },
-    //         None => caller
-    //     };
-
-    //     Ok(address)
-    // }
